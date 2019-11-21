@@ -2,7 +2,8 @@
 2、使用mvn clean compile test package install等命令进行测试
 3、在pom.xml文件中配置项目的编译jdk版本，这里有一个注意点，就是pom.xml中的编译插件配置的比如是1.7
 但是左边菜单中的external libraries里面的jdk仍然是1.8的，这个说明idea的这个跟maven的还不一样
-maven的主要用于compile命令的。
+maven的主要用于compile命令的。左边菜单中的external libraries是在建立maven项目的时候对话框中的上边
+有选择的jdk的地方。由于我的环境中只安装了jdk1.8因此只能选择1.8。所以它们两个是没有必然联系的。
 4、在pom.xml文件中配置项目的tomcat7插件，配置好了以后就可以使用mvn tomcat7:run来使用maven
 tomcat7插件来运行项目了，如果不配置那么默认的是使用tomcat6(mvn tomcat:run)
 通过使用右边工具栏中的maven Projects----plugins----tmcat7---右击tomcat7:run---run maven builder
